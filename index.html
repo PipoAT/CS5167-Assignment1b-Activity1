@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Goal Tracking and Journaling</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div id="headerinfo">
+        <h1>Welcome, Andrew Pipo!</h1>
+        <div id="quote">
+            <p>"Nothing is impossible, the word itself says 'I'm possible'." - Audrey Hepburn</p>
+        </div>
+        <br>
+    </div>
+    <div id="entryform">
+        <form>
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" required>
+            <br>
+            <br>
+            <label for="time">Time:</label>
+            <input type="time" id="time" name="time" required>
+            <br>
+            <br>
+            <label for="journal">Journal:</label>
+            <textarea id="journal" name="journal" required></textarea>
+            <br>
+            <br>
+            <label for="sleep">Amount of sleep you got (in hours):</label>
+            <input type="text" id="sleep" name="sleep" required>
+            <br>
+            <br>
+            <label for="feeling">How did you feel today:</label>
+            <br>
+            <input type="checkbox" id="feeling" name="energetic" value="energetic">
+            <label for="energetic"> Energetic</label>
+            <br>
+            <input type="checkbox" id="anxious" name="anxious" value="anxious">
+            <label for="anxious"> Anxious</label>
+            <br>
+            <input type="checkbox" id="motivated" name="motivated" value="motivated">
+            <label for="motivated"> Motivated</label>
+            <br>
+            <input type="checkbox" id="happy" name="happy" value="happy">
+            <label for="happy"> Happy</label>
+            <br>
+            <input type="checkbox" id="depressed" name="depressed" value="depressed">
+            <label for="depressed"> Depressed</label>
+            <br>
+            <input type="checkbox" id="indifferent" name="indifferent" value="indifferent">
+            <label for="depressed"> Indifferent</label>
+            <br>
+            <br>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <br>
+    <div id="data">
+        <h1>Journal Streak</h1>
+        <svg height="100" width="100">
+            <circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="lightgreen" />
+            <text x="50%" y="50%" text-anchor="middle" alignment-baseline="middle">5 Days</text>
+        </svg>
+    </div>
+    <div id="data">
+        <h1>Sleep</h1>
+        <br>
+        <svg height="100" width="100">
+            <circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="pink" />
+            <text x="50%" y="50%" text-anchor="middle" alignment-baseline="middle">2 Hours</text>
+        </svg>
+    </div>
+    <div id="data">
+        <h1>Current Mood</h1>
+        <br>
+        <svg height="100" width="100">
+            <circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="lightblue" />
+        </svg>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
